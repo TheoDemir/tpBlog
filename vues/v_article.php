@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>Mes articles</title>
 </head>
+
 <body>
     <h2>Nos articles récents</h2>
     <div class="articles">
@@ -21,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php 
+                <?php 
             $res = array();
             $res = $pdo->getArticles();
             
@@ -41,4 +43,5 @@
         </table>
     </div>
 </body>
+
 </html>
